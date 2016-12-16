@@ -1,0 +1,7 @@
+{{#if before}}
+  <i class='caret fa {{if (eq up clicked) 'asc'}} fa-caret-up'></i>{{yield}}
+{{else if both}}
+  <i class='caret fa {{if (eq up clicked) 'asc'}} fa-caret-up'></i>{{yield}}<i class='caret fa {{if (eq up clicked) 'asc'}} fa-caret-up'></i>
+{{else}}
+  {{yield}}<i class='caret fa {{if (eq up clicked) 'asc'}} fa-caret-up'></i>
+{{/if}}

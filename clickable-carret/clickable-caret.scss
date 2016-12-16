@@ -1,0 +1,50 @@
+.clickable-caret {
+  // position: absolute;
+  .caret {
+    padding: 0 2px;
+    margin-left: 8px;
+    display: relative;
+  }
+  &.disabled {
+    color: #dedede;
+  }
+  &:not(.disabled) {
+    cursor: pointer;
+    &:hover {
+      .caret {
+        color: #64bae8;
+        transform: scaleY(-1);
+        -moz-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+        &.asc {
+          transform: scaleY(1);
+          -moz-transform: scaleY(1);
+          -webkit-transform: scaleY(1);
+          -ms-transform: scaleY(1);
+        }
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+    }
+    .caret {
+      color: #898989;
+      &.asc {
+        transform: scaleY(-1);
+        -moz-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+      }
+      transform: scaleY(1);
+      -moz-transform: scaleY(1);
+      -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+  }
+}
